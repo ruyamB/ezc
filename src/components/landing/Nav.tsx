@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { List, X, ArrowUpRight } from "@phosphor-icons/react";
 import { ThemeToggle } from "@/components/ThemeProvider";
+import Logo from "@/components/Logo";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -12,8 +13,8 @@ export default function Nav() {
         <div className="w-full max-w-5xl rounded-full border border-white/40 bg-white/70 shadow-[0_10px_40px_-15px_rgba(18,55,42,0.3)] backdrop-blur-2xl dark:border-white/10 dark:bg-panel/70 dark:shadow-[0_10px_40px_-15px_rgba(0,0,0,0.8)]">
           <div className="flex h-14 items-center justify-between pl-5 pr-2">
             <Link href="/" className="flex items-center gap-2.5">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-ink font-display text-sm font-bold text-white dark:bg-mist dark:text-ink">
-                EZ
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-ink text-emerald-400 dark:bg-mist dark:text-accent-deep">
+                <Logo size={18} />
               </span>
               <span className="leading-none">
                 <span className="block font-display text-[15px] font-700 font-bold tracking-tight">EZContract</span>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
+import Logo from "@/components/Logo";
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
         <div className="grid gap-10 border-t border-white/10 pt-12 md:grid-cols-[1.2fr_1fr_1fr_1fr]">
           <div>
             <div className="flex items-center gap-2.5">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white font-display text-sm font-bold text-ink">EZ</span>
+              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-accent-deep"><Logo size={20} /></span>
               <span>
                 <span className="block font-display text-lg font-bold tracking-tight">EZContract</span>
                 <span className="block text-[10px] font-bold uppercase tracking-[0.2em] text-white/50">by ETHShala</span>
