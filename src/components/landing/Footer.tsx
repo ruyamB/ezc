@@ -45,7 +45,7 @@ export default function Footer() {
           <div>
             <p className="font-mono2 text-[11px] uppercase tracking-[0.2em] text-white/40">ETHShala</p>
             <ul className="mt-4 space-y-2.5 text-[14px] font-semibold text-white/80">
-              <li><a className="hover:text-white" href="https://ethshala.xyz" target="_blank" rel="noreferrer">ethshala.xyz</a></li>
+              <li><a className="hover:text-white hover:underline" href="https://ethshala.com" target="_blank" rel="noreferrer">ethshala.com</a></li>
               <li><span className="text-white/50">Cohorts, workshops and support</span></li>
             </ul>
           </div>
