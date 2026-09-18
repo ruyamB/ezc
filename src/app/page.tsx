@@ -1,10 +1,7 @@
 import Nav from "@/components/landing/Nav";
 import Hero from "@/components/landing/Hero";
 import About from "@/components/landing/About";
-import Demo from "@/components/landing/Demo";
-import Toolbox from "@/components/landing/Toolbox";
 import HowItWorks from "@/components/landing/HowItWorks";
-import Templates from "@/components/landing/Templates";
 import Footer from "@/components/landing/Footer";
 
 export default function Home() {
@@ -14,10 +11,7 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <About />
-        <Demo />
-        <Toolbox />
         <HowItWorks />
-        <Templates />
       </main>
       <Footer />
     </div>
