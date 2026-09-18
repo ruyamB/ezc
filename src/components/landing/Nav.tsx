@@ -23,7 +23,8 @@ export default function Nav() {
               </span>
             </Link>
             <nav className="hidden items-center gap-7 text-[14px] font-semibold text-inksoft dark:text-fog md:flex">
-              <a href="#about" className="transition-colors hover:text-ink dark:hover:text-mist">Why it exists</a>
+              <a href="#why" className="transition-colors hover:text-ink dark:hover:text-mist">Why it exists</a>
+              <a href="#demo" className="transition-colors hover:text-ink dark:hover:text-mist">Planner</a>
               <a href="#how" className="transition-colors hover:text-ink dark:hover:text-mist">How it works</a>
               <a href="#templates" className="transition-colors hover:text-ink dark:hover:text-mist">Templates</a>
             </nav>
@@ -33,7 +34,7 @@ export default function Nav() {
                 href="/config/wallet"
                 className="group ez-btn hidden items-center gap-2 bg-ink px-5 py-2.5 text-[14px] font-bold text-white transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-forest active:scale-[0.98] dark:bg-mist dark:text-ink dark:hover:bg-emerald-200 sm:flex"
               >
-                Start building
+                Start building free
                 <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white/15 transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 dark:bg-ink/10">
                   <ArrowUpRight size={14} weight="bold" />
                 </span>
@@ -54,10 +55,11 @@ export default function Nav() {
         <div className="fixed inset-0 z-30 bg-ink/80 backdrop-blur-3xl md:hidden">
           <div className="flex min-h-full flex-col items-center justify-center gap-2 px-8">
             {[
-              { label: "Why it exists", href: "#about" },
+              { label: "Why it exists", href: "#why" },
+              { label: "Planner", href: "#demo" },
               { label: "How it works", href: "#how" },
               { label: "Templates", href: "#templates" },
-              { label: "Start building", href: "/config/wallet" },
+              { label: "Start building free", href: "/config/wallet" },
             ].map((l, i) => (
               <a
                 key={l.label}
