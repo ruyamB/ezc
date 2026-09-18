@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono2: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-paper: #f6f8f5;
+  --color-cream: #eef3ec;
+  --color-ink: #0c1411;
+  --color-inksoft: #3c4a44;
+  --color-muted: #6b7a72;
+  --color-line: #dde7de;
+  --color-accent: #0ba46a;
+  --color-accent-deep: #087a4f;
+  --color-accent-soft: #d9f2e4;
+  --color-forest: #12372a;
+  --color-card: #ffffff;
+
+  /* night tokens: same emerald accent, off-black greens, no pure black */
+  --color-night: #090e0b;
+  --color-panel: #0f1612;
+  --color-mist: #e9f1ea;
+  --color-fog: #93a89b;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  text-rendering: optimizeLegibility;
+}
+
+.dark body {
+  background: var(--color-night);
+  color: var(--color-mist);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+.font-mono2 {
+  font-family: var(--font-mono2);
+}
+
+/* shape rule: buttons pill, cards 20px, inputs 12px */
+.ez-card {
+  border-radius: 20px;
+}
+.ez-btn {
+  border-radius: 999px;
+}
+.ez-input {
+  border-radius: 12px;
+}
+
+/* double-bezel: outer shell + inner core */
+.bezel {
+  background: rgba(12, 20, 17, 0.04);
+  border: 1px solid rgba(12, 20, 17, 0.08);
+  padding: 6px;
+  border-radius: 26px;
+}
+.bezel-inner {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.9), 0 20px 60px -30px rgba(18, 55, 42, 0.25);
+  border: 1px solid rgba(12, 20, 17, 0.06);
+}
+.bezel-dark {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 6px;
+  border-radius: 26px;
+}
+.bezel-dark-inner {
+  background: #0e1a15;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.12);
+}
+
+/* motion */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  filter: blur(8px);
+  transition: opacity 0.9s cubic-bezier(0.32, 0.72, 0, 1), transform 0.9s cubic-bezier(0.32, 0.72, 0, 1), filter 0.9s cubic-bezier(0.32, 0.72, 0, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* react flow tweaks */
+.xyflow-wrapper {
+  background: radial-gradient(circle at 1px 1px, rgba(12,20,17,0.12) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+.dark .xyflow-wrapper {
+  background: radial-gradient(circle at 1px 1px, rgba(233,241,234,0.14) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+
+/* bezels adapt: same machined-nesting logic, night values after dark */
+.dark .bezel {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.dark .bezel-inner {
+  background: var(--color-panel);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.08), 0 20px 60px -30px rgba(0, 0, 0, 0.8);
+}
+
+::selection {
+  background: #0ba46a;
+  color: white;
+}
