@@ -232,7 +232,7 @@ export default function DeployPage() {
 
           {!wallet.address && wallet.embeddedWallets.length === 0 && (
             <p className="mt-3 rounded-xl bg-amber-50 px-4 py-2.5 text-[13px] font-semibold text-amber-900 dark:bg-amber-400/10 dark:text-amber-200">
-              No wallet connected. <Link href="/config" className="underline">Finish setup</Link> first.
+              No wallet connected. <Link href="/config/wallet" className="underline">Finish setup</Link> first.
             </p>
           )}
 

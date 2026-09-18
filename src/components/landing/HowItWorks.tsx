@@ -40,7 +40,7 @@ export default function HowItWorks() {
               Three steps. Zero Solidity homework.
             </h2>
             <Link
-              href="/config"
+              href="/config/wallet"
               className="group ez-btn flex items-center gap-2 bg-accent px-6 py-3 text-[15px] font-bold text-white transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-emerald-500 active:scale-[0.98]"
             >
               Try the dashboard

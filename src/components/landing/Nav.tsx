@@ -30,7 +30,7 @@ export default function Nav() {
             <div className="flex items-center gap-2">
               <ThemeToggle className="h-10 w-10 border-transparent bg-transparent" />
               <Link
-                href="/config"
+                href="/config/wallet"
                 className="group ez-btn hidden items-center gap-2 bg-ink px-5 py-2.5 text-[14px] font-bold text-white transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-forest active:scale-[0.98] dark:bg-mist dark:text-ink dark:hover:bg-emerald-200 sm:flex"
               >
                 Start building
@@ -57,7 +57,7 @@ export default function Nav() {
               { label: "Why it exists", href: "#about" },
               { label: "How it works", href: "#how" },
               { label: "Templates", href: "#templates" },
-              { label: "Start building", href: "/config" },
+              { label: "Start building", href: "/config/wallet" },
             ].map((l, i) => (
               <a
                 key={l.label}

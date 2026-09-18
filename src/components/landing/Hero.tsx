@@ -74,7 +74,7 @@ export default function Hero() {
             </p>
             <div className="mt-7 flex flex-wrap items-center gap-3">
               <Link
-                href="/config"
+                href="/config/wallet"
                 className="group ez-btn flex items-center gap-2 bg-ink px-7 py-3.5 text-[15px] font-bold text-white transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-forest active:scale-[0.98] dark:bg-mist dark:text-ink dark:hover:bg-emerald-200"
               >
                 Start building free

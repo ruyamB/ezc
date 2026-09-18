@@ -19,7 +19,7 @@ export default function Footer() {
               don&apos;t know web3 yet.
             </p>
             <Link
-              href="/config"
+              href="/config/wallet"
               className="ez-btn mt-5 inline-flex items-center gap-2 bg-white px-5 py-2.5 text-[14px] font-bold text-ink transition-transform hover:scale-[1.02] active:scale-[0.98]"
             >
               Launch dashboard <ArrowUpRight size={15} weight="bold" />

@@ -79,7 +79,7 @@ function BalancePill() {
   if (!wallet.address) {
     return (
       <a
-        href="/config"
+        href="/config/wallet"
         className="ez-btn flex items-center gap-1.5 border border-line bg-white px-3.5 py-1.5 text-[12px] font-bold hover:border-ink/30 dark:border-white/10 dark:bg-white/5 dark:hover:border-white/30"
       >
         <Wallet size={14} weight="duotone" /> Set up wallet

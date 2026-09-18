@@ -24,7 +24,7 @@ function DashInner() {
             <ArrowLeft size={15} weight="regular" /> Home
           </Link>
           <span className="text-muted dark:text-fog">/</span>
-          <Link href="/config" className="flex items-center gap-1.5 text-[13.5px] font-bold text-inksoft hover:text-ink dark:text-fog dark:hover:text-mist">
+          <Link href="/config/wallet" className="flex items-center gap-1.5 text-[13.5px] font-bold text-inksoft hover:text-ink dark:text-fog dark:hover:text-mist">
             <GearSix size={15} weight="regular" /> Setup
           </Link>
         </div>
